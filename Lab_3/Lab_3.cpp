@@ -24,7 +24,8 @@ int main()
     }
 
 
-    int lich = 1;
+    
+    /*int lich = 1;
     std::cout << lich << ": ";
     show(A, n);
     for (int i = 1; i < factorial(n); i++) {     
@@ -32,8 +33,29 @@ int main()
         lich++;
         std::cout << lich << ": ";
         show(A, n);
+    }*/
+    
+
+    int lich = 1;
+    std::cout << lich << ": ";
+    show(A, k);
+
+    for (int i = 1; i < C(n, k); i++) {
+        lich++;
+        std::cout << lich << ": ";
+        GenComb(A, n, k);
+        show(A, k);
     }
 
+    /*while (GenComb(A, n, k)) {
+        lich++;
+        std::cout << lich << ": ";
+        show(A, k);
+    }*/
+
+
+
+    
     
     
 
