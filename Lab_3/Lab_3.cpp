@@ -11,6 +11,7 @@ int main()
     int n, k;
     std::cout << "Введіть ваші n і k: ";
     std::cin >> n >> k;
+    std::cout << "Факторіал числа - " << factorial(n) << std::endl;
     std::cout << "Розміщення без повторень - " << A(n, k)<<std::endl;
     std::cout << "Розміщення з повтореннями - " << _A(n, k)<< std::endl;
     std::cout << "Сполучення без повторень - " << C(n, k)<< std::endl;
@@ -41,11 +42,15 @@ int main()
     show(A, k);
 
     for (int i = 1; i < C(n, k); i++) {
-        lich++;
+        ++lich;
         std::cout << lich << ": ";
         GenComb(A, n, k);
         show(A, k);
     }
+    
+
+
+
 
     /*while (GenComb(A, n, k)) {
         lich++;

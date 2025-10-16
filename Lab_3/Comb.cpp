@@ -40,7 +40,7 @@ int GenPerm(int* A, int n) {
 		}
 	}
 
-	if (i < 0) { return 0;}
+	if (i < 0) { return 0; }
 
 	int j = n - 1;
 	while (A[j] <= A[i]) 
@@ -63,6 +63,7 @@ int GenComb(int* A, int n, int k) {
 	}
 
 	if (i < 0) return 0;
+
 
 	A[i]++;
 
